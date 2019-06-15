@@ -1,0 +1,27 @@
+<form action="/" method="POST">
+  <div class="text-center">
+    <div style="display: inline-block">
+      <div class="form-group card-deck">
+        {{#each icons}}
+        <div class="card" style="width: 18rem;">
+          <img src='{{ this.path }}' class='card-img-top' alt='{{targetName this.target}}'>
+          <div class=" card-body"></div>
+          <div class="card-footer">
+            <input class="form-check-input" type="radio" name="option" id="{{this.target}}" value="{{this.target}}"
+              {{isChecked this.target ../selection}}>
+            <label class="form-check-label" for="{{this.target}}"> {{targetName this.target}}</label>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="form-group row" style="padding-right: 15px">
+        <div class="col col-sm-2">
+          <button type="submit" class="btn-outline-secondary form-control">產生幹話</button>
+        </div>
+        <textarea class="col form-control" style="padding-top: 15px">
+        {{#if selection}}身為{{targetName selection}}{{dummyTalk}}吧 {{/if}}
+        </textarea>
+      </div>
+    </div>
+  </div>
+</form>

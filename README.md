@@ -22,10 +22,11 @@ You can choose one of offered careers for fun.
 > - install package
 >   ```
 >   npm install
+>   npm install nodemon (if you haven't installed this before.)
 >   ```
 > - run the app
 >   ```
->   node app.js
+>   npm run dev
 >   ```
 > - open browser
 >   ```

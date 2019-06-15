@@ -13,7 +13,7 @@ You can choose one of offered careers for fun.
 
 > - git clone project
 >   ```
->   git clone http://github.com/reinlintaipei
+>   git clone http://github.com/reinlintaipei/alphaCampDummyGenerator.git
 >   ```
 > - install package
 >   ```

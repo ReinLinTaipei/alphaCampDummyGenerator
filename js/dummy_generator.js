@@ -1,7 +1,7 @@
 const models = require('./constants')
 
 function dummyGenerator(option) {
-  if (option == null) return ''
+  if (!option) return ''
   const task = dummyTalk(models.task[option])
   const phrase = dummyTalk(models.phrase)
   return `${task}${phrase}`

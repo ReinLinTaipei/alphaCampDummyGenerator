@@ -15,6 +15,10 @@ You can choose one of offered careers for fun.
 >   ```
 >   git clone http://github.com/reinlintaipei/alphaCampDummyGenerator.git
 >   ```
+> - change folder
+>   ```
+>   cd [project folder]
+>   ```
 > - install package
 >   ```
 >   npm install

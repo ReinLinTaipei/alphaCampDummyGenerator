@@ -7,7 +7,7 @@ const helpers = require('./js/helpers')
 const app = express()
 const port = 3000
 
-// set template engine
+// set template engine and helpers
 app.engine(
   'handlebars',
   exphdbs({
@@ -20,14 +20,12 @@ app.engine(
 )
 app.set('view engine', 'handlebars')
 app.use(bodyParser.urlencoded({ extended: true }))
-// app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   res.render('index', { icons: models.icons, target: models.target })
 })
 
 app.post('/', (req, res) => {
-  console.log('option:', req.body)
   const option = req.body.option
   const dummyTalk = dummyGenerator(option)
   res.render('index', {

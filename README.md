@@ -5,19 +5,26 @@ You can choose one of offered careers for fun.
 
 ![website snapshot](./public/img/dummy_generator_screenshot.png)
 
-**Prerequisites**
+> **Feature**
+>
+> - select a career
+> - click submit button
+> - click navbar title if you want to clear selection and output textarea
 
+> **Prerequisites**
+>
 > - Node.js `v10.16.0`
+> - nodemon.js
 
-**Installation**
-
+> **Installation**
+>
 > - git clone project
 >   ```
 >   git clone http://github.com/reinlintaipei/alphaCampDummyGenerator.git
 >   ```
 > - change folder
 >   ```
->   cd [project folder]
+>   cd alphaCampDummyGenerator
 >   ```
 > - install package
 >   ```
@@ -33,3 +40,7 @@ You can choose one of offered careers for fun.
 >    http://localhost:3000
 >   ```
 > - enjoy ~
+
+> **Author**
+>
+> - **Rein Lin**

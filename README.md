@@ -5,18 +5,18 @@ You can choose one of offered careers for fun.
 
 ![website snapshot](./public/img/dummy_generator_screenshot.png)
 
-**Feature**
+## Feature
 
 - select a career
 - click submit button
 - click navbar title if you want to clear selection and output textarea
 
-**Prerequisites**
+## Prerequisites
 
 - Node.js `v10.16.0`
 - nodemon.js
 
-**Installation**
+## Installation
 
 - git clone project
   ```
@@ -41,6 +41,6 @@ You can choose one of offered careers for fun.
   ```
 - enjoy ~
 
-**Author**
+## Author
 
 **Rein Lin**

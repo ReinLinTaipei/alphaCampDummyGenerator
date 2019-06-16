@@ -15,6 +15,7 @@ You can choose one of offered careers for fun.
 
 - Node.js `v10.16.0`
 - nodemon.js
+- "handlebars" `^4.1.2`
 
 ## Installation
 

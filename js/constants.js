@@ -16,19 +16,17 @@ const task = {
   entrepreneur: ['週末加班', '要能賺錢', '想個 business model', '找 VC 募錢']
 }
 const phrase = ['很簡單', '很容易', '很快', '很基本', '沒問題', '這是你的專業']
-
 const path = 'https://assets-lighthouse.s3.amazonaws.com/uploads/image/file'
-
-const targets = [
-  { career: 'engineer', path: `${path}/5668/angry-developer.jpg` },
-  { career: 'designer', path: `${path}/5667/angry-designer.jpg` },
-  { career: 'entrepreneur', path: `${path}/5669/angry-founder.jpg` }
+const careers = [
+  { career: 'engineer', image: `${path}/5668/angry-developer.jpg` },
+  { career: 'designer', image: `${path}/5667/angry-designer.jpg` },
+  { career: 'entrepreneur', image: `${path}/5669/angry-founder.jpg` }
 ]
 
 module.exports = {
   names,
   task,
   phrase,
-  targets,
+  careers,
   styles
 }

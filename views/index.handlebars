@@ -1,13 +1,15 @@
+<link rel="stylesheet" href="css/mycss.css">
+
 <form action="/" method="POST">
   <div class="text-center">
     <div style="display: inline-block">
       <div class="form-group card-deck">
-        {{#each targets}}
+        {{#each careers}}
         <div class="card {{cardStyle this.career}} mb-3" style="width: 18rem;">
-          <img src={{this.path}} class='card-img-top' alt={{#name this.career}}{{this}}{{/name}}>
+          <img class="card-img-top" src={{this.image}} alt={{this.career}}>
           <div class="card-body"></div>
           <div class="card-footer">
-            <input class="form-check-input" type="radio" name="options" id={{this.career}} value='{{this.career}}'
+            <input class="form-check-input" type="radio" name="options" value={{this.career}}
               {{#isEqual this.career ../option}} checked {{/isEqual}}>
             <label class="form-check-label"> {{#name this.career}}{{this}}{{/name}}</label>
           </div>

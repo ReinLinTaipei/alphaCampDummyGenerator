@@ -2,7 +2,7 @@ const express = require('express')
 const exphdbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const dummyGenerator = require('./js/dummy_generator')
-const models = require('./js/constants')
+const targets = require('./js/constants').targets
 const helpers = require('./js/helpers')
 const app = express()
 const port = 3000
@@ -13,8 +13,7 @@ app.engine(
   exphdbs({
     defaultLayout: 'main',
     helpers: {
-      isChecked: helpers.isChecked,
-      targetName: helpers.getTargetName
+      cardStyle: helpers.getStyle
     }
   })
 )
@@ -22,16 +21,16 @@ app.set('view engine', 'handlebars')
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
-  res.render('index', { icons: models.icons, target: models.target })
+  res.render('index', { targets })
 })
 
 app.post('/', (req, res) => {
-  const option = req.body.option
-  const dummyTalk = dummyGenerator(option)
+  const option = req.body.options
+  const dummy = dummyGenerator(option)
   res.render('index', {
-    dummyTalk,
-    icons: models.icons,
-    selection: option
+    dummy,
+    targets,
+    option
   })
 })
 

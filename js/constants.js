@@ -1,7 +1,14 @@
-const target = {
+const names = {
   engineer: '工程師',
   designer: '設計師',
   entrepreneur: '創業家'
+}
+const styles = {
+  engineer: 'text-white bg-success',
+  designer: 'text-white bg-warning',
+  entrepreneur: 'text-white bg-primary',
+  dummy: 'text-white bg-dark',
+  submit: 'btn-outline-danger'
 }
 const task = {
   engineer: ['加個按鈕', '加新功能', '切個版', '改一點code', '新增語系'],
@@ -12,15 +19,16 @@ const phrase = ['很簡單', '很容易', '很快', '很基本', '沒問題', '�
 
 const path = 'https://assets-lighthouse.s3.amazonaws.com/uploads/image/file'
 
-const icons = [
-  { target: 'engineer', path: `${path}/5668/angry-developer.jpg` },
-  { target: 'designer', path: `${path}/5667/angry-designer.jpg` },
-  { target: 'entrepreneur', path: `${path}/5669/angry-founder.jpg` }
+const targets = [
+  { career: 'engineer', path: `${path}/5668/angry-developer.jpg` },
+  { career: 'designer', path: `${path}/5667/angry-designer.jpg` },
+  { career: 'entrepreneur', path: `${path}/5669/angry-founder.jpg` }
 ]
 
 module.exports = {
-  target,
+  names,
   task,
   phrase,
-  icons
+  targets,
+  styles
 }

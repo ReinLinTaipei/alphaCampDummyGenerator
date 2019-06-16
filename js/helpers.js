@@ -1,14 +1,20 @@
-const target = require('./constants').target
-// is radio item checked
-function isChecked(item, option) {
-  return item == option ? 'checked' : ''
-}
+const names = require('./constants').names
+const styles = require('./constants').styles
+const handlebars = require('handlebars')
 
-function getTargetName(id) {
-  return target[id]
+handlebars.registerHelper('isEqual', (target, compare, options) => {
+  if (!target || !compare) return false
+  return target === compare ? options.fn(this) : ''
+})
+
+handlebars.registerHelper('name', (key, options) => {
+  return key ? options.fn(names[key]) : ''
+})
+
+function getStyle(key) {
+  return styles[key]
 }
 
 module.exports = {
-  isChecked,
-  getTargetName
+  getStyle
 }

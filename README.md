@@ -3,7 +3,7 @@
 This project is a dummy generator as title.
 You can choose one of offered careers for fun.
 
-![website snapshot](./public/img/dummy_generator_screenshot.png)
+![website snapshot](./public/img/dummy_screenshot.png)
 
 ## Feature
 
